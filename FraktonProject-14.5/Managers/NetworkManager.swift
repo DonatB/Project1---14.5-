@@ -18,50 +18,13 @@ class NetworkManager {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
     }
     
-    
-//    func getSingleUserInfo(with userID: Int, completed: @escaping(Result<User, DBError>) -> Void) {
-//        let endpoint = baseURL + "/\(userID)"
-//
-//        guard let url = URL(string: endpoint) else {
-//            completed(.failure(.invalidURL))
-//            return
-//        }
-//
-//        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-//
-//            if let _ = error {
-//                completed(.failure(.unableToRequest))
-//                return
-//            }
-//
-//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-//                completed(.failure(.invalidResponse))
-//                return
-//            }
-//
-//            guard let data = data else {
-//                completed(.failure(.invalidData))
-//                return
-//            }
-//
-//            do {
-//                let users = try self.decoder.decode(UserInfoData.self, from: data)
-//                completed(.success(users.data))
-//            } catch {
-//                completed(.failure(.invalidData))
-//            }
-//        }
-//        task.resume()
-//    }
-    
-    
+
     private func getGenericData<T: Codable>(with endpoint: String?, completed: @escaping (Result <T, DBError> ) -> Void) {
         var completedEndpoint = baseURL
         
         if let endpoint = endpoint {
             completedEndpoint += endpoint
         }
-        print(completedEndpoint)
         
         guard let url = URL(string: completedEndpoint) else {
             completed(.failure(.invalidURL))

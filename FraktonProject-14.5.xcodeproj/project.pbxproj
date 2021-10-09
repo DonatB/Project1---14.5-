@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A808C67D26E93C9C00752F34 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808C67C26E93C9C00752F34 /* UserInfoVC.swift */; };
-		A818668726EB7DD8005442E5 /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818668626EB7DD8005442E5 /* UserInfoData.swift */; };
 		A8223D7226E13EFF007C72B8 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8223D7126E13EFF007C72B8 /* UserListVC.swift */; };
 		A8223D7A26E1566E007C72B8 /* DBBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8223D7926E1566E007C72B8 /* DBBodyLabel.swift */; };
 		A8223D7C26E15728007C72B8 /* DBAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8223D7B26E15728007C72B8 /* DBAlertVC.swift */; };
@@ -18,7 +17,6 @@
 		A82A197826DEC473002A0282 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A197726DEC473002A0282 /* MainVC.swift */; };
 		A82A197A26DEC4E2002A0282 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A197926DEC4E2002A0282 /* FavoritesListVC.swift */; };
 		A82AC2CE26E3B382000BE988 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82AC2CD26E3B382000BE988 /* NetworkManager.swift */; };
-		A82AC2D026E40BCA000BE988 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82AC2CF26E40BCA000BE988 /* UserData.swift */; };
 		A85E872926E500A9007A990A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E872826E500A9007A990A /* ErrorMessage.swift */; };
 		A86095F726F130C20065EF61 /* DBSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86095F626F130C20065EF61 /* DBSecondaryTitleLabel.swift */; };
 		A8674E9D27120A2C00E3499F /* UserDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674E9C27120A2C00E3499F /* UserDataWrapper.swift */; };
@@ -44,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		A808C67C26E93C9C00752F34 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
-		A818668626EB7DD8005442E5 /* UserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
 		A8223D7126E13EFF007C72B8 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
 		A8223D7926E1566E007C72B8 /* DBBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBodyLabel.swift; sourceTree = "<group>"; };
 		A8223D7B26E15728007C72B8 /* DBAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAlertVC.swift; sourceTree = "<group>"; };
@@ -54,7 +51,6 @@
 		A82A197726DEC473002A0282 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A82A197926DEC4E2002A0282 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		A82AC2CD26E3B382000BE988 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		A82AC2CF26E40BCA000BE988 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A85E872826E500A9007A990A /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		A86095F626F130C20065EF61 /* DBSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		A8674E9C27120A2C00E3499F /* UserDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataWrapper.swift; sourceTree = "<group>"; };
@@ -253,8 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				A8B20A3E26E2A2DB0074EEA1 /* User.swift */,
-				A82AC2CF26E40BCA000BE988 /* UserData.swift */,
-				A818668626EB7DD8005442E5 /* UserInfoData.swift */,
 				A8674E9C27120A2C00E3499F /* UserDataWrapper.swift */,
 			);
 			path = Model;
@@ -336,9 +330,7 @@
 				A8AC30D626E6A1F6000202BA /* UIHelper.swift in Sources */,
 				A867677026FB7C3500082AAB /* Constants.swift in Sources */,
 				A8223D8626E15F9B007C72B8 /* UIViewController+Ext.swift in Sources */,
-				A82AC2D026E40BCA000BE988 /* UserData.swift in Sources */,
 				A8223D7226E13EFF007C72B8 /* UserListVC.swift in Sources */,
-				A818668726EB7DD8005442E5 /* UserInfoData.swift in Sources */,
 				A8919A6626FA781200C1883C /* FavoriteCell.swift in Sources */,
 				A82A197A26DEC4E2002A0282 /* FavoritesListVC.swift in Sources */,
 				A8912C0326D5A0920030D50A /* AppDelegate.swift in Sources */,
