@@ -62,7 +62,7 @@ class FavoritesListVC: UIViewController {
     
     func updateTableUI(with favorites: [User]) {
         if favorites.isEmpty {
-            showEmptyStateView(with: "You don't have any favorite users... yet!\n Add one by tapping the \"+\" in the detailed user info view.", in: self.view)
+            showEmptyStateView(with: "You don't have any favorite users... yet!\n Add one by tapping the heart in the detailed user info view.", in: self.view)
         } else {
             self.favorites = favorites
             DispatchQueue.main.async {
@@ -119,7 +119,7 @@ extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
                     self.favorites.remove(at: indexPath.row)
                     self.tableView.deleteRows(at: [indexPath], with: .left)
                     if self.favorites.isEmpty {
-                        self.showEmptyStateView(with: "You don't have any favorite users... yet!\n Add one by tapping the \"+\" in the detailed user info view.", in: self.view)
+                        self.showEmptyStateView(with: "You don't have any favorite users... yet!\n Add one by tapping the heart in the detailed user info view.", in: self.view)
                     }
                 }
                 return
